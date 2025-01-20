@@ -27,7 +27,7 @@ function getNombre(){
         document.getElementById('resultado').innerHTML="";
         let aleatorio = Math.floor(Math.random()*(nombres.length-1))+1;
         const nuevoElemento = document.createElement('li');
-        nuevoElemento.textContent = nombres[aleatorio];
+        nuevoElemento.textContent = "Amigo sorteado: "+nombres[aleatorio];
         document.getElementById('resultado').appendChild(nuevoElemento);
     }
     else{
